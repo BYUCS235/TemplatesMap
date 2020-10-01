@@ -1,5 +1,5 @@
 # Templates for Maps
-The syntax for templates can be kind of confusing.  It is a little more confusing when dealing with a map where you have a "Name" and a "Value" that can each take on different types.  This tuturial will help you with the syntax details so that you can get into the fun part of programming your map.
+The syntax for templates can be kind of confusing.  It is a little more confusing when dealing with a map where you have a "Name" and a "Value" that can each take on different types.  This tutorial will help you with the syntax details so that you can get into the fun part of programming your map.
 
 To start out, lets look at the syntax for a normal template class that we might want to make for our HashMap.
 ```c++
@@ -11,7 +11,7 @@ class HashMap {
     T get () {return element;}
 };
 ```
-Notice that here, we have a single template class "T" that will be substituted with the type when we declare a variable of this class.  For example, in the following declaration, T would be a "string".
+Notice that here, we have a single template class "T" that will be substituted with the type when we declare a variable of this class.  For example, in the following declaration, T would be a "string"
 ```c++
 HashMap<string> stringMap;
 ```
@@ -41,7 +41,7 @@ class HashMap {
   ...
 ```
 
-If you are using chaining for your Hash table, then you will want to create a structure that will implement the links.  You will also want to declare an array of pointers to these structures.  I suggest you keep your hash table small so you can find bugs in your chaining code.
+If you are using chaining for your Hash-table, then you will want to create a structure that will implement the links.  You will also want to declare an array of pointers to these structures.  I suggest you keep your hash table small so you can find bugs in your chaining code.
 ```c++
 const int CONSIZE=10;
 template <class Name, class Value>
@@ -57,7 +57,7 @@ class HashMap {
 	node *context_array[CONSIZE];
   ...
 ```
-In order to declare a HashMap from "string" to "vector<string>", you can use the same syntax you use with the STL map.
+In order to declare a HashMap from "string" to "vector<string>", you can use the same syntax you use with the STL(standard template library) map.
 ```c++
 HashMap <string, vector <string>> goo;
 ```
